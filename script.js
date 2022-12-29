@@ -31,8 +31,8 @@ function calcular_contador_con_segundos(tiempo){
   minutes = minutes < 10 ? "0" + minutes : minutes;
   seconds = seconds < 10 ? "0" + seconds : seconds;
 
-  console.log(minutes + ":" + seconds)
-
+  document.querySelector('#platform_timer').textContent = minutes + ":" + seconds
+ 
 }
 
 function callMeteor() {
