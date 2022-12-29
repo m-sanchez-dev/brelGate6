@@ -19,8 +19,6 @@ function calcular_tiempo_plataforma(tiempo_original){
   // minuto 40 segundos
   tiempo_resto = 60 + 40
   resucitar = tiempo_original - tiempo_resto
-  console.log(tiempo_original)
-  console.log(resucitar)
   calcular_contador_con_segundos(resucitar)
 } 
 
@@ -40,12 +38,9 @@ function callMeteor() {
     
     minutos = parseInt(timer.split(":")[0], 10)
     segundos = parseInt(timer.split(":")[1], 10)
-    console.log("pillado", minutos + ":" + segundos)
     tiempo_boton = (minutos * 60) + segundos
 
-  calcular_tiempo_plataforma(tiempo_boton)
-
-
+    calcular_tiempo_plataforma(tiempo_boton)
 }
 
 
