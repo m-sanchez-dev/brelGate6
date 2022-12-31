@@ -15,14 +15,14 @@ function startTimer(duration, display) {
     }, 1000);
 }
 
-function calcular_tiempo_plataforma(tiempo_original){
-  // minuto 40 segundos
-  tiempo_resto = 60 + 40
-  resucitar = tiempo_original - tiempo_resto
-  calcular_contador_con_segundos(resucitar)
+function calcular_tiempo_plataforma(original_timer){
+  // 1 minute and 40 seconds
+  time_to_discount = 60 + 40
+  resucitar = original_timer - time_to_discount
+  calculate_timer_time(resucitar)
 } 
 
-function calcular_contador_con_segundos(tiempo){
+function calculate_timer_time(tiempo){
   minutes = parseInt(tiempo / 60, 10);
   seconds = parseInt(tiempo % 60, 10);
 
@@ -36,11 +36,11 @@ function calcular_contador_con_segundos(tiempo){
 function callMeteor() {
     timer = document.querySelector('#header').textContent
     
-    minutos = parseInt(timer.split(":")[0], 10)
-    segundos = parseInt(timer.split(":")[1], 10)
-    tiempo_boton = (minutos * 60) + segundos
+    minutes = parseInt(timer.split(":")[0], 10)
+    seconds = parseInt(timer.split(":")[1], 10)
+    button_time = (minutes * 60) + seconds
 
-    calcular_tiempo_plataforma(tiempo_boton)
+    calcular_tiempo_plataforma(button_time)
 }
 
 
