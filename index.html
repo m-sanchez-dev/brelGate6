@@ -4,18 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="src/style.css">
+  <script src="src/script.js"></script>
   <title>Brel Gate 6 Meteor Timer</title>
 </head>
 
 <body>
   <div id="content">
+    <div class="button_holder">
+      <button onclick="callMeteor()">Meteor</button>
+      <button onclick="restartTimer()">Reset</button>
+    </div>
+    
     <h1 id="header"></h1>
-
-    <script src="script.js"></script>
-    <br />
-    <button onclick="callMeteor()">Meteor</button>
-
+    
     <div id="revive_element">Platform revive: <span id="platform_timer"></span></div>
   </div>
 </body>
